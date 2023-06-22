@@ -6,8 +6,11 @@ This repository contains information and coding exercises for the Andam Lab grou
 
 
 conda install -c conda-forge -c bioconda -c defaults abricate
+
 abricate --db card --quiet *.fa > abricate_amr_results.tab
+
 abricate --summary abricate_amr_results.tab > abricate_amr_summary.tab
 
 abricate --db vfdb --quiet *.fa > abricate_vfdb_results.tab
+
 abricate --summary abricate_vfdb_results.tab > abricate_vfdb_summary.tab
